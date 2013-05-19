@@ -68,7 +68,7 @@ public class JazzyViewPager extends ViewPager {
 		int effect = ta.getInt(R.styleable.JazzyViewPager_style, 0);
 		String[] transitions = getResources().getStringArray(R.array.jazzy_effects);
 		setTransitionEffect(TransitionEffect.valueOf(transitions[effect]));
-		setFadeEnabled(ta.getBoolean(R.styleable.JazzyViewPager_fadeEnabled, false));
+		setFadeEnabled(ta.getBoolean(R.styleable.JazzyViewPager_android_fadeEnabled, false));
 		setOutlineEnabled(ta.getBoolean(R.styleable.JazzyViewPager_outlineEnabled, false));
 		setOutlineColor(ta.getColor(R.styleable.JazzyViewPager_outlineColor, Color.WHITE));
 		switch (mEffect) {
